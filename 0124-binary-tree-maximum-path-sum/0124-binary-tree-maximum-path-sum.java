@@ -24,10 +24,12 @@ public int maxPathSum(TreeNode root) {
 
 public int helper(TreeNode root) {
     if(root == null)
-        return Integer.MIN_VALUE;
+        return 0;
     int left = Math.max(0, helper(root.left));
     int right = Math.max(0, helper(root.right));
+    
     max = Math.max(max, root.val + left + right);
+    
     return root.val + Math.max(left, right);
 }
 }
