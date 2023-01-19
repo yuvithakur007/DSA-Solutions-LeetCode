@@ -1,4 +1,5 @@
 class Solution {
+    // using dutch national flag algo
     public void sortColors(int[] nums) {
         int lo = 0; 
         int hi = nums.length - 1; 
