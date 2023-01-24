@@ -1,7 +1,9 @@
 class Solution {
     public int singleNonDuplicate(int[] nums) {
-        
-                if(nums.length==1) return nums[0];
+        // Intution: keep dividing your array in two halves and check in which half there are odd number of elements...that will be your required part.
+
+
+        if(nums.length==1) return nums[0];
         int l = 0;
         int h = nums.length-1;
         
@@ -17,6 +19,10 @@ class Solution {
         
         return nums[l];     //left pointer will have the answer at last
     }
+    
+    
+    // usingh xor
+    
     //         int n = nums.length;
     //         int elem = 0;
     //         for (int i = 0; i < n; i++) {
