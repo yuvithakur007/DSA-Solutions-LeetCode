@@ -6,6 +6,9 @@ class Solution {
             minPrice= Math.min(minPrice, arr[i]);
             maxProfit=Math.max(maxProfit,arr[i]-minPrice);
         }
+        return maxProfit;
+    }
+}
         // test cases failed
         // int maxProfit = 0;
         // for (int i = 0; i < arr.length; i++) {
@@ -15,7 +18,3 @@ class Solution {
         //         }
         //     }
         // }
-        
-        return maxProfit;
-    }
-}
