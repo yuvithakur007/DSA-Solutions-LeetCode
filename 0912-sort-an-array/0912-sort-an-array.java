@@ -7,6 +7,5 @@ class Solution {
             a[i]=pq.poll();
         }
         return a;
-        
     }
 }
