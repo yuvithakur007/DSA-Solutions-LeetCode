@@ -3,8 +3,10 @@ class Solution {
         List<Integer> ans = new ArrayList<>();
         int m = matrix.length;
         int n = matrix[0].length;
+        
         int count = 0;
         int total = m * n;
+        
         int startingRow = 0;
         int endingRow = m - 1;
         int startingCol = 0;
